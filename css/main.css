@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://static.pexels.com/photos/221471/pexels-photo-221471.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+ul {
+  margin: 50px 0 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 25px 0;
+}
+li button {
+  float: right;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: #fff;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+}
+form input {
+  flex: 6;
+  padding: 15px 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  transition: all 0.5s ease;
+  color: #fff;
+  outline: none;
+}
+form input:focus {
+  font-size: 20px;
+}
+form input::-webkit-input-placeholder {
+  color: #fff;
+}
+form button {
+  flex: 1;
+}
+form button:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
